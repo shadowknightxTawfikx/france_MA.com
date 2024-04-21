@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <link href="proj.css" rel="stylesheet">
+
+    <title>
+        Heart Attack Predictor
+        </title>
+        <link rel="icon" type="img/png" href="https://1000logos.net/wp-content/uploads/2019/03/IEEE-Logo-768x432.png">
+ <head>
+    <body>
+        
+        <h2 class="logo"><span class="L">H</span> <span class="D">EART </span> <span class="L">A</span>
+            <span class="D">TTACK </span> <span class="L">P</span> <span class="D">REDICTOR</span></h2>
+        <header>
+            <img class="line" src="ECG.png" alt="ECG">
+        <nav>
+            <a class="N" href="#">Home</a>
+            <a class="N" href="#">About</a>
+            <a class="N" href="#">Feedback</a>
+            <a class="N" href="#">Support</a>
+            <a class="N" href="#">Contact</a>
+            <div class="animation start-home"></div>
+        </nav>
+        <img class="line" src="ECG_rev.png" alt="ECG">
+        </header>
+
+        <div class="hor"> 
+            
+            <div class="mar">
+                <p>Enter your age</p>
+            <div class="inputBox">
+                <input type ="number" required="required">
+                <span>Age</span>
+            </div>
+        </div>
+            
+
+            <div class="mar">
+                <p>Select your gender</p>
+            <div class="selbox">  
+                 
+                <select name="gender" id="gender" required placeholger="sexualty" class="sel">
+                    <option value="0">male</option>
+                    <option value="1">female</option>
+                </select>
+                <div class="icont">
+                    <i class="fa-solid fa-caret-down"></i>
+                </div>
+            </div>
+        </div>
+         
+            <div class="mar">
+                <p>select ur chest pain dgree</p>
+            <div class="selbox">  
+                 
+                 <select name="chest pain" id="chest pain" required placeholger="cp" class="sel" >
+                     <option value="1">typical angina</option>
+                     <option value="2">atypical angina</option>
+                     <option value="3">non-anginal pain</option>
+                     <option value="4">atypical angina</option>
+                 </select >
+            </div>
+        </div>
+            </div>
+
+
+        <div class="hor">  
+            
+            <div class="mar">
+                <p>enter ur resting blood pressure</p>
+            <div class="inputBox">
+                
+                <input type ="number"
+                name="trtbps" id="trtbps"
+                required ="required"
+                max="220" min="80"
+                maxlength="3" oninput="ebter"> 
+                <span>blood pressure</span>
+                <!-- i made the max and the min (from here and in the rest)based on the data with some space if u have scentific info pls add it -->
+            </div>
+           </div>
+
+            <div class="mar">
+                <p>cholestrol via BMI sensor</p>
+            <div class="inputBox"> 
+                
+                <input type = "number" 
+                required ="required"
+                 min="120" max="600"
+                  maxlength="3"> 
+                  <span>cholestrol</span>
+            </div>
+           </div>
+            
+            <div class="mar">
+                <p>Is your fasting blood sugar over 120 mg/dl</p>
+            <form action="">
+                
+                <label class="form-control">
+                  <input type="radio" name="radio" />
+                  Yes
+                </label>
+              
+                <label class="form-control">
+                  <input type="radio" name="radio" checked />
+                  No
+                </label>
+              </form>
+              </div>
+            </div>
+
+
+
+              <div class="hor">
+                <div class="mar">
+                    <p>electrocardiographic results</p>
+                    <form action="">
+                        
+                        <label class="form-control">
+                          <input type="radio" name="radio" />
+                          Normal
+                        </label>
+                      
+                        <label class="form-control">
+                          <input type="radio" name="radio" checked />
+                          Having ST-T wave abnormalty
+                        </label>
+                      </form>
+            </div>
+            
+            <div class="mar">
+                <p>enter ur maximum heart rate</p>
+            <div class="inputBox"> 
+                
+                <input type= "number"
+                 required ="required"
+                 min="70" max="210" >
+                 <span>Max heart rate</span>
+            </div>
+            </div>
+
+
+            <div class="mar">
+                <p>dose ur exercise include angina</p>
+            <div class="container">  
+                
+                
+                <form action="">
+                    <label class="form-control">
+                      <input type="radio" name="radio" />
+                      Yes
+                    </label>
+                  
+                    <label class="form-control">
+                      <input type="radio" name="radio" checked />
+                      No
+                    </label>
+                  </form>
+            </div>
+        </div>
+        </div>
+
+
+        <div class="hor"> 
+            <div class="mar">
+                <p>oldpeak</p>
+            <div class="inputBox"> 
+                
+                <input type= "number" required ="required"  max = "5" >
+                <span>oldpeak</span>
+            </div>
+            </div>
+
+
+            <div class="mar">
+            <div class="selbox">  
+                <p for="thall">what is the ur status of the (thalassemia) disorder</p>
+                <select name="thall" id = "thall" required placeholger="thall" class="sel">
+                    <option value="1">fixed defect (no blood flow innsome partsfthe heart)</option>
+                    <option value="2">normal blood flow</option>
+                    <option value="3">reversible defect</option>
+                </select >
+           </div>
+            </div>
+
+
+           <div class="mar">
+            <p>what is the number of ur major vessels</p>
+            <div class="inputBox">
+                 
+                <input type ="number" required ="required" max = "3" min ="0">
+                <span>major vessels</span>
+            </div>
+            </div> 
+
+        </div>
+
+
+        <div class="hor"> 
+            <div class="mar"> 
+                <p>what is the slope of the peak exercise ST segment</p>
+            <div class="selbox"> 
+               
+                <select name="slp" id = "slp" required placeholger="slp" class="sel">  <!-- slp probply spilled wrong it must be slop  -->
+                    <option value="0">downslpoing</option>
+                    <option value="1">upsloping</option>
+                    <option value="2">flat</option>
+                </select >          
+              </div>
+            </div>
+        </div>
+
+
+            <div class="subbox">
+            <input type="submit">
+            </div>
+          
+            <footer class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="footer-col">
+                <h4>company</h4>
+                <ul>
+                    <li><a href="#">about us</a></li>
+                    <li><a href="#">our service</a></li>
+                    <li><a href="#">privacy policy</a></li>
+                    <li><a href="#">affiliate program</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>help center</h4>
+                <ul>
+                    <li><a href="#">support</a></li>
+                    <li><a href="#">FAQs</a></li>
+                    <li><a href="#">feedback</a></li>
+                    <li><a href="#">terms of services</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>follow us</h4>
+                <div class="social">
+                    <a href="#"><img class="icon" src="facebook-icon.png" alt=""></a>
+                    <a href="#"><img class="icon" src="Instagram-icon.png" alt=""></a>
+                    <a href="#"><img class="icon" src="twitter-png.png" alt=""></a>
+                </div>
+            </div>
+            <p1>Created by SHNITE © 2023</p1>
+        </div>
+    </div>
+    
+</footer>
+          
+
+	
+
+        
+            
+
+
+    </body>
+</html>
